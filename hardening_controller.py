@@ -23,15 +23,15 @@ class Colors:
 class HardeningController:
     def __init__(self):
         self.modules = {
-            '1': {'name': 'Filesystem Configuration', 'script': '1_filesystem.sh'},
-            '2': {'name': 'Package Management', 'script': '2_package_mgmt.sh'},
-            '3': {'name': 'Services Configuration', 'script': '3_services.sh'},
-            '4': {'name': 'Network Configuration', 'script': '4_network.sh'},
-            '5': {'name': 'Host Based Firewall', 'script': '5_firewall.sh'},
-            '6': {'name': 'Access Control', 'script': '6_access_control.sh'},
-            '7': {'name': 'User Accounts', 'script': '7_user_accounts.sh'},
-            '8': {'name': 'Logging and Auditing', 'script': '8_logging_audit.sh'},
-            '9': {'name': 'System Maintenance', 'script': '9_system_maintenance.sh'}
+            '1': {'name': 'Filesystem Configuration', 'script': 'filesystem.sh'},
+            '2': {'name': 'Package Management', 'script': 'package_mgmt.sh'},
+            '3': {'name': 'Services Configuration', 'script': 'services.sh'},
+            '4': {'name': 'Network Configuration', 'script': 'network.sh'},
+            '5': {'name': 'Host Based Firewall', 'script': 'firewall.sh'},
+            '6': {'name': 'Access Control', 'script': 'access_control.sh'},
+            '7': {'name': 'User Accounts', 'script': 'user_accounts.sh'},
+            '8': {'name': 'Logging and Auditing', 'script': 'logging_audit.sh'},
+            '9': {'name': 'System Maintenance', 'script': 'system_maintenance.sh'}
         }
         self.report_file = f"hardening_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
         self.results = {}
